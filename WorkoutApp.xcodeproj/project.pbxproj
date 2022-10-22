@@ -17,7 +17,7 @@
 		FCDE76C429043CB50087D89A /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C329043CB50087D89A /* NavBarController.swift */; };
 		FCDE76C629043F6F0087D89A /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C529043F6F0087D89A /* BaseController.swift */; };
 		FCDE76C8290445710087D89A /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C7290445710087D89A /* UIView + ext.swift */; };
-		FCDE76CF2904482A0087D89A /* SesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76CE2904482A0087D89A /* SesionViewController.swift */; };
+		FCDE76CF2904482A0087D89A /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76CE2904482A0087D89A /* SessionViewController.swift */; };
 		FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D0290448570087D89A /* ProgressViewController.swift */; };
 		FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D2290448790087D89A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		FCDE76C329043CB50087D89A /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		FCDE76C529043F6F0087D89A /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		FCDE76C7290445710087D89A /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
-		FCDE76CE2904482A0087D89A /* SesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionViewController.swift; sourceTree = "<group>"; };
+		FCDE76CE2904482A0087D89A /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		FCDE76D0290448570087D89A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		FCDE76D2290448790087D89A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,7 @@
 		FCDE76CB290447F30087D89A /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				FCDE76CE2904482A0087D89A /* SesionViewController.swift */,
+				FCDE76CE2904482A0087D89A /* SessionViewController.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 				FC9ED1602900549E00B746ED /* AppDelegate.swift in Sources */,
 				FC9ED17D29005AF400B746ED /* Resources.swift in Sources */,
 				FC9ED17A29005A2500B746ED /* UIColor + ext.swift in Sources */,
-				FCDE76CF2904482A0087D89A /* SesionViewController.swift in Sources */,
+				FCDE76CF2904482A0087D89A /* SessionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
