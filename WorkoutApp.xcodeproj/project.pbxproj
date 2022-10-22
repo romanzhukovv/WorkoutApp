@@ -17,6 +17,9 @@
 		FCDE76C429043CB50087D89A /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C329043CB50087D89A /* NavBarController.swift */; };
 		FCDE76C629043F6F0087D89A /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C529043F6F0087D89A /* BaseController.swift */; };
 		FCDE76C8290445710087D89A /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C7290445710087D89A /* UIView + ext.swift */; };
+		FCDE76CF2904482A0087D89A /* SesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76CE2904482A0087D89A /* SesionViewController.swift */; };
+		FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D0290448570087D89A /* ProgressViewController.swift */; };
+		FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D2290448790087D89A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FCDE76C329043CB50087D89A /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		FCDE76C529043F6F0087D89A /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		FCDE76C7290445710087D89A /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
+		FCDE76CE2904482A0087D89A /* SesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionViewController.swift; sourceTree = "<group>"; };
+		FCDE76D0290448570087D89A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		FCDE76D2290448790087D89A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +91,11 @@
 		FC9ED1742900558900B746ED /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCDE76CD290448040087D89A /* Settings */,
+				FCDE76CC290447FB0087D89A /* Progress */,
+				FCDE76CB290447F30087D89A /* Session */,
+				FCDE76CA290447EA0087D89A /* Overview */,
 				FCDE76C9290447B70087D89A /* Base */,
-				FC9ED1632900549E00B746ED /* OverviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,6 +134,38 @@
 				FCDE76C529043F6F0087D89A /* BaseController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FCDE76CA290447EA0087D89A /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				FC9ED1632900549E00B746ED /* OverviewViewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		FCDE76CB290447F30087D89A /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE76CE2904482A0087D89A /* SesionViewController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		FCDE76CC290447FB0087D89A /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE76D0290448570087D89A /* ProgressViewController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		FCDE76CD290448040087D89A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE76D2290448790087D89A /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,12 +240,15 @@
 			files = (
 				FC9ED1772900591600B746ED /* TabBarController.swift in Sources */,
 				FCDE76C429043CB50087D89A /* NavBarController.swift in Sources */,
+				FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */,
 				FCDE76C8290445710087D89A /* UIView + ext.swift in Sources */,
 				FCDE76C629043F6F0087D89A /* BaseController.swift in Sources */,
 				FC9ED1642900549E00B746ED /* OverviewViewController.swift in Sources */,
+				FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */,
 				FC9ED1602900549E00B746ED /* AppDelegate.swift in Sources */,
 				FC9ED17D29005AF400B746ED /* Resources.swift in Sources */,
 				FC9ED17A29005A2500B746ED /* UIColor + ext.swift in Sources */,
+				FCDE76CF2904482A0087D89A /* SesionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
