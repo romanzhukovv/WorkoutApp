@@ -14,6 +14,8 @@ enum Resources {
         
         static let background = UIColor(hexString: "#F8F9F9")
         static let separator = UIColor(hexString: "#E8ECEF")
+        static let secondary = UIColor(hexString: "#F0F3FF")
+        
         static let titleGray = UIColor(hexString: "#545C77")
         
     }
@@ -37,6 +39,10 @@ enum Resources {
             static let navBarLeft = "Pause"
             static let navBarRight = "Finish"
         }
+        
+        enum Overview {
+            static let allWorkoutsButton = "All Workouts"
+        }
     }
     
     enum Images {
@@ -46,6 +52,10 @@ enum Resources {
             static let progress = UIImage(systemName: "chart.bar.fill")
             static let settings = UIImage(systemName: "gearshape")
         }
+        
+        enum Common {
+            static let allWorkoutsButton = UIImage(systemName: "chevron.down")
+        }
     }
     
     enum Fonts {
@@ -53,4 +63,6 @@ enum Resources {
             UIFont(name: "Helvetica", size: size) ?? UIFont()
         }
     }
+    
+    
 }

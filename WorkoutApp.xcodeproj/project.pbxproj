@@ -20,6 +20,7 @@
 		FCDE76CF2904482A0087D89A /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76CE2904482A0087D89A /* SessionViewController.swift */; };
 		FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D0290448570087D89A /* ProgressViewController.swift */; };
 		FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D2290448790087D89A /* SettingsViewController.swift */; };
+		FCF703B7290C1A030055E938 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF703B6290C1A030055E938 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FCDE76CE2904482A0087D89A /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		FCDE76D0290448570087D89A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		FCDE76D2290448790087D89A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FCF703B6290C1A030055E938 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		FCDE76CA290447EA0087D89A /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				FCF703B5290C19C40055E938 /* Views */,
 				FC9ED1632900549E00B746ED /* OverviewViewController.swift */,
 			);
 			path = Overview;
@@ -166,6 +169,14 @@
 				FCDE76D2290448790087D89A /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		FCF703B5290C19C40055E938 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCF703B6290C1A030055E938 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF703B7290C1A030055E938 /* SecondaryButton.swift in Sources */,
 				FC9ED1772900591600B746ED /* TabBarController.swift in Sources */,
 				FCDE76C429043CB50087D89A /* NavBarController.swift in Sources */,
 				FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */,
