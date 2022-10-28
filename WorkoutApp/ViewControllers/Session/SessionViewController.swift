@@ -19,5 +19,4 @@ class SessionViewController: BaseController {
         addNavBarButton(at: .right, with: "Finish")
     }
 
-
 }

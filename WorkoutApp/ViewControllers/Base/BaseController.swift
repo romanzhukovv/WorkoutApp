@@ -35,11 +35,11 @@ class BaseController: UIViewController {
         view.backgroundColor = Resources.Colors.background
     }
     
-    private func navBarLeftButtonHandler() {
+    func navBarLeftButtonHandler() {
         print("left")
     }
     
-    private func navBarRightButtonHandler() {
+    func navBarRightButtonHandler() {
         print("right")
     }
 }
