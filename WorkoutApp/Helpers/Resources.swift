@@ -55,6 +55,7 @@ enum Resources {
         
         enum Common {
             static let allWorkoutsButton = UIImage(systemName: "chevron.down")
+            static let addButton = UIImage(named: "addButton")
         }
     }
     
