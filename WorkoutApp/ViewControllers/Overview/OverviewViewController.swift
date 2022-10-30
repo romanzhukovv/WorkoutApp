@@ -25,7 +25,6 @@ extension OverviewViewController {
         super.addViews()
         
         view.addSubview(navBar)
-        view.addSubview(allWorkoutsButton)
     }
     
     override func layoutViews() {
