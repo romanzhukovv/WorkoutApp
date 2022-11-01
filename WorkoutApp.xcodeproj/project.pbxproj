@@ -16,6 +16,7 @@
 		FC9ED17D29005AF400B746ED /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9ED17C29005AF400B746ED /* Resources.swift */; };
 		FCCC7C05291116AE0052EE46 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7C04291116AE0052EE46 /* WeekView.swift */; };
 		FCCC7C07291118CE0052EE46 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7C06291118CE0052EE46 /* WeekDayView.swift */; };
+		FCCC7C092911368B0052EE46 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7C082911368B0052EE46 /* Date + ext.swift */; };
 		FCD64D40290EC6D50032233A /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD64D3F290EC6D50032233A /* OverviewNavBar.swift */; };
 		FCD64D42290EC71E0032233A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD64D41290EC71E0032233A /* BaseView.swift */; };
 		FCDE76C429043CB50087D89A /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76C329043CB50087D89A /* NavBarController.swift */; };
@@ -39,6 +40,7 @@
 		FC9ED17C29005AF400B746ED /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		FCCC7C04291116AE0052EE46 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		FCCC7C06291118CE0052EE46 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		FCCC7C082911368B0052EE46 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		FCD64D3F290EC6D50032233A /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		FCD64D41290EC71E0032233A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		FCDE76C329043CB50087D89A /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				FC9ED17929005A2500B746ED /* UIColor + ext.swift */,
 				FCDE76C7290445710087D89A /* UIView + ext.swift */,
+				FCCC7C082911368B0052EE46 /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */,
 				FCD64D40290EC6D50032233A /* OverviewNavBar.swift in Sources */,
 				FCDE76C8290445710087D89A /* UIView + ext.swift in Sources */,
+				FCCC7C092911368B0052EE46 /* Date + ext.swift in Sources */,
 				FCCC7C05291116AE0052EE46 /* WeekView.swift in Sources */,
 				FCDE76C629043F6F0087D89A /* BaseController.swift in Sources */,
 				FC9ED1642900549E00B746ED /* OverviewViewController.swift in Sources */,
