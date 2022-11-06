@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC576F012917F0D300F11C69 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC576F002917F0D300F11C69 /* BaseInfoView.swift */; };
 		FC9ED1602900549E00B746ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9ED15F2900549E00B746ED /* AppDelegate.swift */; };
 		FC9ED1642900549E00B746ED /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9ED1632900549E00B746ED /* OverviewViewController.swift */; };
 		FC9ED1692900549F00B746ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9ED1682900549F00B746ED /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC576F002917F0D300F11C69 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		FC9ED15C2900549E00B746ED /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9ED15F2900549E00B746ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC9ED1632900549E00B746ED /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				FCDE76C329043CB50087D89A /* NavBarController.swift */,
 				FCDE76C529043F6F0087D89A /* BaseController.swift */,
 				FCD64D41290EC71E0032233A /* BaseView.swift */,
+				FC576F002917F0D300F11C69 /* BaseInfoView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF703B7290C1A030055E938 /* SecondaryButton.swift in Sources */,
+				FC576F012917F0D300F11C69 /* BaseInfoView.swift in Sources */,
 				FCCC7C07291118CE0052EE46 /* WeekDayView.swift in Sources */,
 				FC9ED1772900591600B746ED /* TabBarController.swift in Sources */,
 				FCDE76C429043CB50087D89A /* NavBarController.swift in Sources */,
