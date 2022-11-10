@@ -24,9 +24,9 @@ class BaseInfoView: BaseView {
         return view
     }()
     
-    init(with title: String? = nil, alignment: NSTextAlignment = .left) {
+    init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
-        titleLabel.textAlignment = alignment
+        titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         
         super.init(frame: .zero)
     }
