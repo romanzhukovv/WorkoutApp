@@ -27,6 +27,7 @@
 		FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D0290448570087D89A /* ProgressViewController.swift */; };
 		FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D2290448790087D89A /* SettingsViewController.swift */; };
 		FCE9D0A5292026C9001D0A73 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9D0A4292026C9001D0A73 /* TimerView.swift */; };
+		FCE9D0A8292029B9001D0A73 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9D0A7292029B9001D0A73 /* ProgressView.swift */; };
 		FCF703B7290C1A030055E938 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF703B6290C1A030055E938 /* WAButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		FCDE76D0290448570087D89A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		FCDE76D2290448790087D89A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FCE9D0A4292026C9001D0A73 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		FCE9D0A7292029B9001D0A73 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		FCF703B6290C1A030055E938 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,9 +204,18 @@
 		FCE9D0A3292026B3001D0A73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FCE9D0A4292026C9001D0A73 /* TimerView.swift */,
+				FCE9D0A62920299F001D0A73 /* Timer */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FCE9D0A62920299F001D0A73 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9D0A4292026C9001D0A73 /* TimerView.swift */,
+				FCE9D0A7292029B9001D0A73 /* ProgressView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		FCF703B5290C19C40055E938 /* Views */ = {
@@ -303,6 +314,7 @@
 				FC9ED1602900549E00B746ED /* AppDelegate.swift in Sources */,
 				FC9ED17D29005AF400B746ED /* Resources.swift in Sources */,
 				FCD64D42290EC71E0032233A /* BaseView.swift in Sources */,
+				FCE9D0A8292029B9001D0A73 /* ProgressView.swift in Sources */,
 				FC9ED17A29005A2500B746ED /* UIColor + ext.swift in Sources */,
 				FCDE76CF2904482A0087D89A /* SessionViewController.swift in Sources */,
 			);

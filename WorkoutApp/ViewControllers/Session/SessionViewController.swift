@@ -9,10 +9,7 @@ import UIKit
 
 class SessionViewController: BaseController {
     
-    private let timerView: WABaseInfoView = {
-        let view = WABaseInfoView(with: "Timer", buttonTitle: "Test Button".uppercased())
-        return view
-    }()
+    private let timerView = TimerView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
