@@ -26,6 +26,7 @@
 		FCDE76CF2904482A0087D89A /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76CE2904482A0087D89A /* SessionViewController.swift */; };
 		FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D0290448570087D89A /* ProgressViewController.swift */; };
 		FCDE76D3290448790087D89A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE76D2290448790087D89A /* SettingsViewController.swift */; };
+		FCE9D0A5292026C9001D0A73 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9D0A4292026C9001D0A73 /* TimerView.swift */; };
 		FCF703B7290C1A030055E938 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF703B6290C1A030055E938 /* WAButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		FCDE76CE2904482A0087D89A /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		FCDE76D0290448570087D89A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		FCDE76D2290448790087D89A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FCE9D0A4292026C9001D0A73 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FCF703B6290C1A030055E938 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 		FCDE76CB290447F30087D89A /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				FCE9D0A3292026B3001D0A73 /* Views */,
 				FCDE76CE2904482A0087D89A /* SessionViewController.swift */,
 			);
 			path = Session;
@@ -194,6 +197,14 @@
 				FCDE76D2290448790087D89A /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		FCE9D0A3292026B3001D0A73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9D0A4292026C9001D0A73 /* TimerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FCF703B5290C19C40055E938 /* Views */ = {
@@ -285,6 +296,7 @@
 				FCDE76C8290445710087D89A /* UIView + ext.swift in Sources */,
 				FCCC7C092911368B0052EE46 /* Date + ext.swift in Sources */,
 				FCCC7C05291116AE0052EE46 /* WeekView.swift in Sources */,
+				FCE9D0A5292026C9001D0A73 /* TimerView.swift in Sources */,
 				FCDE76C629043F6F0087D89A /* BaseController.swift in Sources */,
 				FC9ED1642900549E00B746ED /* OverviewViewController.swift in Sources */,
 				FCDE76D1290448570087D89A /* ProgressViewController.swift in Sources */,
