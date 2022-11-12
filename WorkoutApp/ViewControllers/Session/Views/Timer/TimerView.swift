@@ -28,13 +28,13 @@ extension TimerView {
             progressView.topAnchor.constraint(equalTo: topAnchor, constant: 40),
             progressView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             progressView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
-            progressView.heightAnchor.constraint(equalTo: progressView.widthAnchor)
+            progressView.heightAnchor.constraint(equalTo: progressView.widthAnchor),
+            progressView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40)
         ])
     }
     
     override func configureViews() {
         super.configureViews()
         
-        progressView.backgroundColor = .red
     }
 }
