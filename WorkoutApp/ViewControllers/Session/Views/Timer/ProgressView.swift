@@ -93,13 +93,15 @@ extension TimerView {
                 let barLayer = CAShapeLayer()
                 barLayer.path = barPath.cgPath
                 barLayer.fillColor = UIColor.clear.cgColor
-                barLayer.strokeColor = Resources.Colors.active.cgColor
+                barLayer.strokeColor = angle >= (7 / 6 - (8 / 6 * percent)) ?
+                                        Resources.Colors.active.cgColor :
+                                        Resources.Colors.separator.cgColor
                 barLayer.lineCap = .round
-                barLayer.lineWidth = 3
+                barLayer.lineWidth = 4
                 
                 layer.addSublayer(barLayer)
                 
-                angle = angle - (1 / 6)
+                angle -= 1 / 6
             }
             
             layer.addSublayer(defaultCircleLayer)
