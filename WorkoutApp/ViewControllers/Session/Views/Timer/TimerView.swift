@@ -7,12 +7,20 @@
 
 import UIKit
 
+enum TimerState {
+    case isRunning
+    case isPaused
+    case isStopped
+}
+
 final class TimerView: WABaseInfoView {
     private let progressView = ProgressView()
     
     private var timer = Timer()
     private var timerProgress: CGFloat = 0
     private var timerDuration = 0.0
+    
+    public var state: TimerState = .isStopped
     
     func configure(with duration: Double, progress: Double) {
         timerDuration = duration
@@ -25,6 +33,8 @@ final class TimerView: WABaseInfoView {
     }
     
     func startTimer() {
+        timer.invalidate()
+        
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] timer in
             guard let self = self else { return }
             
@@ -40,11 +50,25 @@ final class TimerView: WABaseInfoView {
     }
     
     func pauseTimer() {
-        
+        timer.invalidate()
     }
     
     func stopTimer() {
+        guard self.timerProgress > 0 else { return }
+        timer.invalidate()
         
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] timer in
+            guard let self = self else { return }
+            
+            self.timerProgress -= 0.1
+            
+            if self.timerProgress <= 0 {
+                self.timerProgress = 0
+                timer.invalidate()
+            }
+            
+            self.configure(with: self.timerDuration, progress: self.timerProgress)
+        })
     }
 }
 
