@@ -10,15 +10,14 @@ import UIKit
 class SessionViewController: BaseController {
     
     private let timerView = TimerView()
+    private let timerDuration = 3.0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        title = Resources.Strings.NavBar.session
-        tabBarItem.title = Resources.Strings.TabBar.session
-        
-        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
-        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
+    override func navBarLeftButtonHandler() {
+        timerView.startTimer()
+    }
+    
+    override func navBarRightButtonHandler() {
+        timerView.stopTimer()
     }
 
 }
@@ -43,5 +42,13 @@ extension SessionViewController {
     
     override func configure() {
         super.configure()
+        
+        title = Resources.Strings.NavBar.session
+        tabBarItem.title = Resources.Strings.TabBar.session
+        
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
+        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
+        
+        timerView.configure(with: timerDuration, progress: 0.0)
     }
 }
