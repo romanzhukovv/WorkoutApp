@@ -110,7 +110,7 @@ final class TimerView: WABaseInfoView {
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] timer in
             guard let self = self else { return }
             
-            self.timerProgress -= 0.1
+            self.timerProgress -= self.timerProgress / 30
             
             if self.timerProgress <= 0 {
                 self.timerProgress = 0
