@@ -91,8 +91,8 @@ final class TimerView: WABaseInfoView {
         
         elapsedTimeValueLabel.text = getDispalyedString(from: Int(tempCurrentValue))
         remainingTimeValueLabel.text = getDispalyedString(from: Int(duration) - Int(tempCurrentValue))
-        completedPercentView.configure(with: "COMPLETED", and: roundedPercent)
-        remainingPercentView.configure(with: "REMAINING", and: 100 - roundedPercent)
+        completedPercentView.configurePercent(with: "COMPLETED", and: roundedPercent)
+        remainingPercentView.configurePercent(with: "REMAINING", and: 100 - roundedPercent)
         progressView.drawProgress(with: CGFloat(percent))
     }
     
@@ -159,9 +159,7 @@ extension TimerView {
             completedPercentView,
             bottomSeparatorView,
             remainingPercentView
-        ].forEach {
-            bottomStackView.addArrangedSubview($0)
-        }
+        ].forEach(bottomStackView.addArrangedSubview)
     }
     
     override func layoutSubviews() {
@@ -180,15 +178,16 @@ extension TimerView {
             bottomStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28),
             bottomStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             bottomStackView.heightAnchor.constraint(equalToConstant: 35),
-//            bottomStackView.widthAnchor.constraint(equalToConstant: 180),
+//            bottomStackView.widthAnchor.constraint(equalToConstant: 175),
             
-            bottomSeparatorView.widthAnchor.constraint(equalToConstant: 1)
+            bottomSeparatorView.widthAnchor.constraint(equalToConstant: 1),
         ])
     }
     
     override func configureViews() {
         super.configureViews()
         
+        layoutIfNeeded()
     }
 }
 
