@@ -25,7 +25,6 @@ final class TimerView: WABaseInfoView {
     
     private let elapsedTimeValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "12:45"
         label.font = Resources.Fonts.helveticaRegular(with: 46)
         label.textColor = Resources.Colors.titleGray
         label.textAlignment = .center
@@ -43,7 +42,6 @@ final class TimerView: WABaseInfoView {
     
     private let remainingTimeValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "02:15"
         label.font = Resources.Fonts.helveticaRegular(with: 13)
         label.textColor = Resources.Colors.titleGray
         label.textAlignment = .center
