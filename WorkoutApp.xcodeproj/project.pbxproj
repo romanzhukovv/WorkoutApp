@@ -15,6 +15,7 @@
 		FC9ED1772900591600B746ED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9ED1762900591600B746ED /* TabBarController.swift */; };
 		FC9ED17A29005A2500B746ED /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9ED17929005A2500B746ED /* UIColor + ext.swift */; };
 		FC9ED17D29005AF400B746ED /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9ED17C29005AF400B746ED /* Resources.swift */; };
+		FCB351A12927BAA5004FE750 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB351A02927BAA5004FE750 /* PercentView.swift */; };
 		FCCC7C05291116AE0052EE46 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7C04291116AE0052EE46 /* WeekView.swift */; };
 		FCCC7C07291118CE0052EE46 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7C06291118CE0052EE46 /* WeekDayView.swift */; };
 		FCCC7C092911368B0052EE46 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7C082911368B0052EE46 /* Date + ext.swift */; };
@@ -42,6 +43,7 @@
 		FC9ED1762900591600B746ED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FC9ED17929005A2500B746ED /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		FC9ED17C29005AF400B746ED /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		FCB351A02927BAA5004FE750 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		FCCC7C04291116AE0052EE46 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		FCCC7C06291118CE0052EE46 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		FCCC7C082911368B0052EE46 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			children = (
 				FCE9D0A4292026C9001D0A73 /* TimerView.swift */,
 				FCE9D0A7292029B9001D0A73 /* ProgressView.swift */,
+				FCB351A02927BAA5004FE750 /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				FC9ED1602900549E00B746ED /* AppDelegate.swift in Sources */,
 				FC9ED17D29005AF400B746ED /* Resources.swift in Sources */,
 				FCD64D42290EC71E0032233A /* BaseView.swift in Sources */,
+				FCB351A12927BAA5004FE750 /* PercentView.swift in Sources */,
 				FCE9D0A8292029B9001D0A73 /* ProgressView.swift in Sources */,
 				FC9ED17A29005A2500B746ED /* UIColor + ext.swift in Sources */,
 				FCDE76CF2904482A0087D89A /* SessionViewController.swift in Sources */,

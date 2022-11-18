@@ -56,6 +56,21 @@ final class TimerView: WABaseInfoView {
         return view
     }()
     
+    private let bottomStackView: UIStackView = {
+        let view = UIStackView()
+        view.distribution = .fillProportionally
+        view.spacing = 25
+        return view
+    }()
+    
+    private let completedPercentView = PercentView()
+    private let remainingPercentView = PercentView()
+    private let bottomSeparatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = Resources.Colors.separator
+        return view
+    }()
+    
     private let progressView = ProgressView()
     
     private var timer = Timer()
@@ -72,10 +87,12 @@ final class TimerView: WABaseInfoView {
         let tempCurrentValue = progress > duration ? duration : progress
         let goalValueDivider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDivider
+        let roundedPercent = Int(round(percent * 100))
         
         elapsedTimeValueLabel.text = getDispalyedString(from: Int(tempCurrentValue))
         remainingTimeValueLabel.text = getDispalyedString(from: Int(duration) - Int(tempCurrentValue))
-        
+        completedPercentView.configure(with: "COMPLETED", and: roundedPercent)
+        remainingPercentView.configure(with: "REMAINING", and: 100 - roundedPercent)
         progressView.drawProgress(with: CGFloat(percent))
     }
     
@@ -123,9 +140,10 @@ final class TimerView: WABaseInfoView {
 extension TimerView {
     override func addViews() {
         super.addViews()
-        addView(progressView)
         
+        addView(progressView)
         addView(timeStackView)
+        addView(bottomStackView)
         
         [
             elapsedTimeLabel,
@@ -134,6 +152,15 @@ extension TimerView {
             remainingTimeValueLabel
         ].forEach {
             timeStackView.addArrangedSubview($0)
+        }
+        
+        
+        [
+            completedPercentView,
+            bottomSeparatorView,
+            remainingPercentView
+        ].forEach {
+            bottomStackView.addArrangedSubview($0)
         }
     }
     
@@ -145,10 +172,17 @@ extension TimerView {
             progressView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             progressView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             progressView.heightAnchor.constraint(equalTo: progressView.widthAnchor),
-            progressView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80),
+            progressView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
             
             timeStackView.centerXAnchor.constraint(equalTo: progressView.centerXAnchor),
-            timeStackView.centerYAnchor.constraint(equalTo: progressView.centerYAnchor)
+            timeStackView.centerYAnchor.constraint(equalTo: progressView.centerYAnchor),
+            
+            bottomStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28),
+            bottomStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            bottomStackView.heightAnchor.constraint(equalToConstant: 35),
+//            bottomStackView.widthAnchor.constraint(equalToConstant: 180),
+            
+            bottomSeparatorView.widthAnchor.constraint(equalToConstant: 1)
         ])
     }
     
