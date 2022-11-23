@@ -58,7 +58,7 @@ final class TimerView: WABaseInfoView {
     
     private let bottomStackView: UIStackView = {
         let view = UIStackView()
-        view.distribution = .fillProportionally
+        view.distribution = .fill
         view.spacing = 25
         return view
     }()
@@ -178,16 +178,16 @@ extension TimerView {
             bottomStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28),
             bottomStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             bottomStackView.heightAnchor.constraint(equalToConstant: 35),
-//            bottomStackView.widthAnchor.constraint(equalToConstant: 175),
             
             bottomSeparatorView.widthAnchor.constraint(equalToConstant: 1),
+            remainingPercentView.widthAnchor.constraint(equalToConstant: 80),
+            completedPercentView.widthAnchor.constraint(equalToConstant: 80)
         ])
     }
     
     override func configureViews() {
         super.configureViews()
-        
-        layoutIfNeeded()
+//        layoutIfNeeded()
     }
 }
 
